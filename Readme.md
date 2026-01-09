@@ -107,14 +107,17 @@ The project includes an interactive **Streamlit web app** that:
 ```text
 AutoJudge/
 │
-├── app.py                  # Streamlit application
 ├── model/
-│   ├── trained_model.pkl   # Final trained model
-│   ├── vectorizer.pkl      # TF-IDF vectorizers
+│   ├── scaler.pkl
+│   ├── vectoriser.pkl
+│   ├── label_encoder.pkl
+│   ├── classifier.pkl
+│   ├── regressor.pkl
+│   └── svd.pkl
 │
-├── notebooks/
-│   ├── model_training.ipynb
-│   ├── feature_engineering.ipynb
-│
+├── difficulty_predictor.ipynb
+├── app.py
+├── autojudge.pdf
 ├── requirements.txt
-├── README.md
+└── README.md
+
